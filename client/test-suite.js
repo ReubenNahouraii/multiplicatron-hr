@@ -1,3 +1,5 @@
+let multiply = require('./multiply')
+
 class TestSuite {
 
   runTest(testName) {
@@ -16,7 +18,15 @@ class TestSuite {
   assertEquals(a, b) { return a === b }
 
   testZeroNegative() {
-    console.log('running positive test')
+    return this.assertEquals(multiply(5, 4), 20)
+  }
+
+  testOneNegative() {
+    return this.assertEquals(multiply(-5, 4), -20)
+  }
+
+  testTwoNegative() {
+    return this.assertEquals(multiply(-5, -4), 20)
   }
 }
 

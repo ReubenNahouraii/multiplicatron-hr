@@ -1,3 +1,5 @@
+let multiply = require('./multiply')
+
 class ViewManager {
 
   connectEventHandlers() {
@@ -26,7 +28,7 @@ class ViewManager {
         divInputs = document.getElementById('form-upper').getElementsByTagName('div')
 
     Array.from(divInputs).forEach( div => {
-      value *= parseInt(div.getElementsByTagName('input')[0].value)
+      value = multiply(value, parseInt(div.getElementsByTagName('input')[0].value))
     })
 
     this.renderValue(value)
