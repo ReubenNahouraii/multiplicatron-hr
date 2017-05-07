@@ -2,8 +2,9 @@
   "name": "multipicatron",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/bundle.js",
+  "main": "server/server.js",
   "scripts": {
+    "start": "node server/server.js",
     "build": "browserify client/app.js -o client/bundle.js",
     "watch": "watchify client/app.js -o client/bundle.js"
   },
