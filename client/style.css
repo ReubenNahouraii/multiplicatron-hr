@@ -1,0 +1,27 @@
+
+form > * > * {
+    margin-top: 25px;
+}
+
+#form-upper {
+    width: 50px;
+    margin: auto;
+}
+
+#form-lower > * {
+    display: block;
+    margin: 25px auto 0 auto;
+}
+
+#renderValue {
+    display: block;
+    border-top: 1px solid;
+    padding: 10px;
+}
+
+input[type='text'], #renderValue {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+}
